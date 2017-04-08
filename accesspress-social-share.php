@@ -191,7 +191,7 @@ if ( !class_exists( 'APSS_Class' ) ) {
 		 * */
 		function register_frontend_assets() {
 			wp_enqueue_style( 'apss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css', array(), APSS_VERSION );
-			wp_enqueue_style( 'apss-font-opensans', '//fonts.googleapis.com/css?family=Open+Sans', array(), false );
+			wp_enqueue_style( 'apss-font-opensans', 'https://fonts.googleapis.com/css?family=Open+Sans', array(), false );
 			wp_enqueue_style( 'apss-frontend-css', APSS_CSS_DIR . '/frontend.css', array( 'apss-font-awesome' ), APSS_VERSION );
 			wp_enqueue_script( 'apss-frontend-mainjs', APSS_JS_DIR . '/frontend.js', array( 'jquery' ), APSS_VERSION, true );
 			$ajax_nonce = wp_create_nonce( 'apss-ajax-nonce' );
